@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakafasy IO - Logiciel de gestion pour Madagascar</title>
+    <meta name="description" content="Logiciel de facturation, devis et BTP conçu pour Madagascar. Paiement Mobile Money (MVola, Orange Money). À partir de 25 000 Ar/mois.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32">
+                    <circle cx="16" cy="16" r="14" fill="none" stroke="#C8102E" stroke-width="2"/>
+                    <path d="M16 8 L20 16 L16 24 L12 16 Z" fill="#C8102E"/>
+                </svg>
+                <span class="logo-text">Fakafasy IO</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+                <li><a href="#tarifs">Tarifs</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#essai" class="btn-nav">Essai gratuit</a></li>
+            </ul>
+            <button class="burger" id="burger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-pattern"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg width="20" height="20" viewBox="0 0 20 20">
+                        <circle cx="10" cy="10" r="8" fill="#C8102E"/>
+                        <path d="M10 4 L13 10 L10 16 L7 10 Z" fill="#e8d5b0"/>
+                    </svg>
+                    <span>Made in Nosy Be 🏝️</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Logiciel de gestion<br>
+                    <span class="gradient-text">pour Madagascar</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Factures • Devis • BTP • Stock<br>
+                    Paiement Mobile Money intégré
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#tarifs" class="btn-primary btn-large">
+                        <span>Commencer gratuitement</span>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 10h10m-5-5l5 5-5 5"/>
+                        </svg>
+                    </a>
+                    <a href="#demo" class="btn-secondary btn-large">
+                        <svg width="20" height="20" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <span>Voir la démo</span>
+                    </a>
+                </div>
+                
+                <div class="hero-info">
+                    <div class="info-item">
+                        <svg width="16" height="16" fill="#48bb78">
+                            <path d="M14 6l-8 8-4-4"/>
+                        </svg>
+                        <span>Essai 30 jours gratuit</span>
+                    </div>
+                    <div class="info-item">
+                        <svg width="16" height="16" fill="#48bb78">
+                            <path d="M14 6l-8 8-4-4"/>
+                        </svg>
+                        <span>À partir de 25 000 Ar/mois</span>
+                    </div>
+                    <div class="info-item">
+                        <svg width="16" height="16" fill="#48bb78">
+                            <path d="M14 6l-8 8-4-4"/>
+                        </svg>
+                        <span>Mobile Money accepté</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="mockup-window">
+                    <div class="mockup-header">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="mockup-content">
+                        <div class="dashboard-preview">
+                            <div class="dashboard-card">
+                                <div class="card-icon" style="background: linear-gradient(135deg, #C8102E, #8a4a10);">📊</div>
+                                <div class="card-info">
+                                    <div class="card-label">Chiffre d'affaires</div>
+                                    <div class="card-value">12 450 000 Ar</div>
+                                </div>
+                            </div>
+                            <div class="dashboard-card">
+                                <div class="card-icon" style="background: linear-gradient(135deg, #48bb78, #38a169);">📄</div>
+                                <div class="card-info">
+                                    <div class="card-label">Factures du mois</div>
+                                    <div class="card-value">47</div>
+                                </div>
+                            </div>
+                            <div class="dashboard-chart">
+                                <div class="chart-bar" style="height: 40%"></div>
+                                <div class="chart-bar" style="height: 65%"></div>
+                                <div class="chart-bar" style="height: 50%"></div>
+                                <div class="chart-bar" style="height: 80%"></div>
+                                <div class="chart-bar" style="height: 70%"></div>
+                                <div class="chart-bar" style="height: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mockup-shadow"></div>
+            </div>
+        </div>
+        <div class="wave-divider">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,120 L0,120 Z" fill="#faf8f5"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon">🏗️</div>
+                    <h3>Module BTP Complet</h3>
+                    <p>Devis automatiques, situations de travaux, gestion de chantiers</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">💰</div>
+                    <h3>Mobile Money</h3>
+                    <p>MVola et Orange Money intégrés pour vos paiements</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">📊</div>
+                    <h3>Temps réel</h3>
+                    <p>Tableau de bord avec statistiques en direct</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">🌍</div>
+                    <h3>Diaspora</h3>
+                    <p>Paiement depuis l'étranger via TapTapSend</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="fonctionnalites" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tout ce dont vous avez besoin</h2>
+                <p class="section-subtitle">Fakafasy IO s'adapte à votre activité</p>
+            </div>
+
+            <div class="features-tabs">
+                <button class="tab-btn active" data-tab="commerce">📝 Commerce</button>
+                <button class="tab-btn" data-tab="btp">🏗️ BTP</button>
+                <button class="tab-btn" data-tab="gestion">📦 Gestion</button>
+                <button class="tab-btn" data-tab="ia">🤖 IA & Cloud</button>
+            </div>
+
+            <div class="tab-content active" data-content="commerce">
+                <div class="feature-layout">
+                    <div class="feature-text">
+                        <h3>Factures et Devis Professionnels</h3>
+                        <ul class="feature-list">
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Modèles conformes à la fiscalité malgache</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Signature électronique intégrée</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Conversion devis → facture en 1 clic</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Relances automatiques des impayés</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Multi-devises (MGA / EUR / USD)</span>
+                            </li>
+                        </ul>
+                        <a href="#tarifs" class="btn-primary">Commencer →</a>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="visual-card">
+                            <div class="invoice-preview">
+                                <div class="invoice-header">
+                                    <div class="invoice-logo">🏝️</div>
+                                    <div class="invoice-number">FACTURE #2026-001</div>
+                                </div>
+                                <div class="invoice-lines">
+                                    <div class="invoice-line"></div>
+                                    <div class="invoice-line"></div>
+                                    <div class="invoice-line"></div>
+                                </div>
+                                <div class="invoice-total">Total: 1 250 000 Ar</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" data-content="btp">
+                <div class="feature-layout reverse">
+                    <div class="feature-visual">
+                        <div class="visual-card">
+                            <div class="btp-preview">
+                                <div class="btp-icon">🏗️</div>
+                                <div class="btp-calc">
+                                    <div class="calc-row">
+                                        <span>Longueur</span>
+                                        <span>25 m</span>
+                                    </div>
+                                    <div class="calc-row">
+                                        <span>Largeur</span>
+                                        <span>15 m</span>
+                                    </div>
+                                    <div class="calc-row">
+                                        <span>Hauteur</span>
+                                        <span>3.5 m</span>
+                                    </div>
+                                    <div class="calc-total">
+                                        Devis: 45 000 000 Ar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Module BTP Intelligent</h3>
+                        <ul class="feature-list">
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Calcul automatique selon dimensions (m²/m³)</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Situations de travaux progressives</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Gestion multi-chantiers</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Templates appels d'offres</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Suivi budget vs réalisé</span>
+                            </li>
+                        </ul>
+                        <a href="#tarifs" class="btn-primary">Découvrir →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" data-content="gestion">
+                <div class="feature-layout">
+                    <div class="feature-text">
+                        <h3>Gestion Stock & Fournisseurs</h3>
+                        <ul class="feature-list">
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Inventaire en temps réel</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Alertes de rupture automatiques</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Commandes fournisseurs</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Import/Export Excel</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Historique mouvements détaillé</span>
+                            </li>
+                        </ul>
+                        <a href="#tarifs" class="btn-primary">En savoir plus →</a>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="visual-card">
+                            <div class="stock-preview">
+                                <div class="stock-item">
+                                    <div class="stock-bar" style="width: 85%"></div>
+                                    <span>Ciment - 85%</span>
+                                </div>
+                                <div class="stock-item">
+                                    <div class="stock-bar warning" style="width: 20%"></div>
+                                    <span>Fer à béton - 20% ⚠️</span>
+                                </div>
+                                <div class="stock-item">
+                                    <div class="stock-bar" style="width: 60%"></div>
+                                    <span>Peinture - 60%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" data-content="ia">
+                <div class="feature-layout reverse">
+                    <div class="feature-visual">
+                        <div class="visual-card">
+                            <div class="ai-preview">
+                                <div class="ai-chat">
+                                    <div class="chat-bubble user">
+                                        Génère une description pour "Ciment Portland"
+                                    </div>
+                                    <div class="chat-bubble ai">
+                                        🤖 Ciment Portland de qualité supérieure, conforme aux normes NF EN 197-1. Idéal pour béton armé et travaux de maçonnerie. Résistance 42.5 MPa. Conditionnement sac 50kg.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Intelligence Artificielle Intégrée</h3>
+                        <ul class="feature-list">
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Assistant "Fasy" pour descriptions produits</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Analyse factures par OCR</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Prévisions de chiffre d'affaires</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Sauvegarde cloud automatique</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" fill="#C8102E"><path d="M14 6l-8 8-4-4"/></svg>
+                                <span>Accès multi-appareils</span>
+                            </li>
+                        </ul>
+                        <a href="#tarifs" class="btn-primary">Essayer →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Je continue avec les sections Tarifs, Paiement, À propos et Contact dans le prochain message -->
+    <!-- Voulez-vous que je continue avec la suite du HTML ? -->
+    <!-- Pricing Section -->
+
+    <section id="tarifs" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tarifs transparents pour Madagascar</h2>
+                <p class="section-subtitle">Choisissez la formule adaptée à vos besoins</p>
+            </div>
+
+            <!-- Currency & Billing Toggle -->
+            <div class="pricing-controls">
+                <div class="billing-toggle">
+                    <button class="toggle-btn active" data-billing="monthly">Mensuel</button>
+                    <button class="toggle-btn" data-billing="yearly">
+                        Annuel
+                        <span class="discount-badge">-20%</span>
+                    </button>
+                </div>
+                <div class="currency-selector">
+                    <button class="currency-btn active" data-currency="mga">
+                        <span class="flag">🇲🇬</span>
+                        <span>MGA</span>
+                    </button>
+                    <button class="currency-btn" data-currency="eur">
+                        <span class="flag">🇪🇺</span>
+                        <span>EUR</span>
+                    </button>
+                    <button class="currency-btn" data-currency="usd">
+                        <span class="flag">🇺🇸</span>
+                        <span>USD</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Pricing Cards -->
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Essai Gratuit</h3>
+                        <p class="plan-desc">Pour découvrir Fakafasy IO</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price-value" data-monthly-mga="0" data-yearly-mga="0">0</span>
+                        <span class="price-currency">Ar</span>
+                        <span class="price-period">/30 jours</span>
+                    </div>
+                    <p class="price-converted">Gratuit</p>
+                    
+                    <ul class="plan-features">
+                        <li>
+                            <svg width="20" height="20" fill="#48bb78"><path d="M14 6l-8 8-4-4"/></svg>
+                            <span>30 jours d'essai complet</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" fill="#48bb78"><path d="M14 6l-8 8-4-4"/></svg>
+                            <span>50 factures maximum</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" fill="#48bb78"><path d="M14 6l-8 8-4-4"/></svg>
+                            <span>1 utilisateur</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" fill="#48bb78"><path d="M14 6l-8 8-4-4"/></svg>
+                            <span>Module Commerce</span>
+                        </li>
+                        <li class="feature-disabled">
+                            <svg width="20" height="20" fill="#cbd5e0"><path d="M6 6l8 8m0-8l-8 8"/></svg>
+                            <span>Module BTP</span>
+                        </li>
+                        <li class="feature-disabled">
+                            <svg width="20" height="20" fill="#cbd5e0"><path d="M6 6l8 8m0-8l-8 8"/></svg>
+                            <span>Gestion Stock</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#essai" class="btn-secondary plan-btn">Commencer gratuitement</a>
+                </div>
+
+                <!-- Pro Plan (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="popular-badge">
+                        <svg width="16" height="16" fill="currentColor"><path d="M8 1l2 5h5l-4 3 2 5-5-3-5 3 2-5-4-3h5z"/></svg>
+                        <span>Populaire</span>
+                    </div>
+                    <div class="plan-header">
+                        <h3 class="plan-name">Pro</h3>
+                        <p class="plan-desc">Pour les entreprises actives</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price-value" data-monthly-mga="45000" data-yearly-mga="432000">45 000</span>
+                        <span class="price-currency">Ar</span>
+                        <span class="price-period">/mois</span>
+                    </div>
+                    <p class="price-converted" data-monthly-eur="11" data-yearly-eur="105" data-monthly-usd="12" data-yearly-usd="115">≈ 11€ ou 12$</p>
+                    
+                    <ul class="plan-features">
+                        <li>
+                            <svg width="20" height="20" fill="#48bb78"><path d="M14 6l-8 8-4-4"/></svg>
+                            <span>Factures illimitées</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" fill="#48bb78"><path d="M14 6l-8 8-4-4"/></svg>
+                            <span>5 utilisateurs</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" fill="#48bb78"><path d="M14 6l-8 8-4-4"/></svg>
+                            <span>Module Commerce complet</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" fill="#48bb78"><path d="M14 6l-8 8-4-4"/></svg>
+                            <span>Module BTP avec IA</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" fill="#48bb78"><path d="M14 6l-8 8-4-4"/></svg>
+                            <span>Gestion Stock temps réel</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" fill="#48bb78"><path d="M14 6l-8 8-4-4"/></svg>
+                            <span>Support prioritaire</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#paiement" class="btn-primary plan-btn">Souscrire maintenant</a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Licence à vie</h3>
+                        <p class="plan-desc">Paiement unique, mises à jour gratuites</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price-value" data-monthly-mga="820000" data-yearly-mga="820000">820 000</span>
+                        <span class="price-currency">Ar</span>
+                        <span class="price-period">une fois</span>
+                    </div>
+                    <p class="price-converted" data-monthly-eur="199" data-yearly-eur="199" data-monthly-usd="220" data-yearly-usd="220">≈ 199€ ou 220$</p>
+                    
+                    <ul class="plan-features">
+                        <li>
+                            <svg width="20" height="20" fill="#48bb78"><path d="M14 6l-8 8-4-4"/></svg>
+                            <span>Tout du plan Pro</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" fill="#48bb78"><path d="M14 6l-8 8-4-4"/></svg>
+                            <span>Utilisateurs illimités</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" fill="#48bb78"><path d="M14 6l-8 8-4-4"/></svg>
+                            <span>Mises à jour gratuites à vie</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" fill="#48bb78"><path d="M14 6l-8 8-4-4"/></svg>
+                            <span>API & intégrations avancées</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" fill="#48bb78"><path d="M14 6l-8 8-4-4"/></svg>
+                            <span>Formation personnalisée</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" fill="#48bb78"><path d="M14 6l-8 8-4-4"/></svg>
+                            <span>Support dédié 7j/7</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#contact" class="btn-secondary plan-btn">Nous contacter</a>
+                </div>
+            </div>
+
+            <!-- Exchange Rate Info -->
+            <div class="exchange-info">
+                <svg width="20" height="20" fill="#718096">
+                    <circle cx="10" cy="10" r="8" stroke="currentColor" fill="none" stroke-width="2"/>
+                    <path d="M10 6v4l3 2" stroke="currentColor" fill="none" stroke-width="2"/>
+                </svg>
+                <span>Taux de change mis à jour quotidiennement • 1€ = 4 100 Ar • 1$ = 3 700 Ar</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="paiement" class="payment-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Paiement sécurisé</h2>
+                <p class="section-subtitle">Plusieurs options adaptées à votre situation</p>
+            </div>
+    </section>    <!-- FIN de Pricing Section -->
+
+    <!-- Download Section -->    <!-- ← AJOUTE ICI -->
+    <section id="telecharger" class="download-section">
+    <!-- ... tout le code de téléchargement ... -->
+    </section>
+
+    
+    <!-- About Section -->
+    <section id="a-propos" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-badge">
+                        <span>🏝️ Made in Nosy Be</span>
+                    </div>
+                    <h2 class="section-title">GASY IA LAB</h2>
+                    <p class="about-tagline">Studio de développement malgache</p>
+                    
+                    <p class="about-text">
+                        Fakafasy IO est né d'un constat simple : les logiciels de gestion occidentaux 
+                        sont trop chers et ne comprennent pas les réalités économiques de Madagascar.
+                    </p>
+                    <p class="about-text">
+                        Notre mission : créer des outils professionnels, adaptés à la fiscalité malgache, 
+                        avec paiement Mobile Money intégré.
+                    </p>
+
+                    <div class="sakalava-section">
+                        <h4>🌅 Inspiré de la culture Sakalava</h4>
+                        <p>
+                            Les motifs que vous voyez dans notre design sont inspirés de l'art 
+                            Sakalava Maroambitsy du Nord-Ouest de Madagascar.
+                        </p>
+                        <div class="sakalava-symbols">
+                            <div class="symbol">
+                                <div class="symbol-icon">◇</div>
+                                <span>Unité</span>
+                            </div>
+                            <div class="symbol">
+                                <div class="symbol-icon">〰️</div>
+                                <span>Océan</span>
+                            </div>
+                            <div class="symbol">
+                                <div class="symbol-icon">☀️</div>
+                                <span>Énergie</span>
+                            </div>
+                            <div class="symbol">
+                                <div class="symbol-icon">⛵</div>
+                                <span>Commerce</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="nosy-be-illustration">
+                            <div class="sun"></div>
+                            <div class="waves">
+                                <div class="wave"></div>
+                                <div class="wave"></div>
+                                <div class="wave"></div>
+                            </div>
+                            <div class="pirogue">⛵</div>
+                            <div class="island">
+                                <div class="palm">🌴</div>
+                                <div class="palm">🌴</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <div class="stat-value">200+</div>
+                            <div class="stat-label">Entreprises</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">15K+</div>
+                            <div class="stat-label">Factures créées</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">4.9/5</div>
+                            <div class="stat-label">Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contactez-nous</h2>
+                <p class="section-subtitle">Notre équipe est à votre écoute</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:gasyialab2.o@gmail.com">gasyialab2.o@gmail.com</a>
+                            <p>Réponse sous 24h</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/261320219889" target="_blank">+261 32 02 198 89</a>
+                            <p>Lun-Sam: 8h-18h</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Adresse</h4>
+                            <p>Hell-Ville, Nosy Be</p>
+                            <p>Madagascar 🇲🇬</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">🌐</div>
+                        <div class="contact-details">
+                            <h4>Site web</h4>
+                            <a href="https://fakafasy.io">fakafasy.io</a>
+                            <p>Documentation & FAQ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form" onsubmit="submitContactForm(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Nom complet</label>
+                                <input type="text" id="contact-name" required placeholder="Votre nom">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" required placeholder="votre@email.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-phone">Téléphone</label>
+                            <input type="tel" id="contact-phone" placeholder="+261 32 00 000 00">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject">Sujet</label>
+                            <select id="contact-subject" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="commercial">Question commerciale</option>
+                                <option value="support">Support technique</option>
+                                <option value="partenariat">Partenariat</option>
+                                <option value="demo">Demande de démo</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" rows="5" required placeholder="Votre message..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-large">
+                            <span>Envoyer le message</span>
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 10h10m-5-5l5 5-5 5"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-pattern"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à transformer votre gestion ?</h2>
+                <p>Rejoignez plus de 200 entreprises qui utilisent Fakafasy IO</p>
+                <div class="cta-buttons">
+                    <a href="#tarifs" class="btn-primary btn-large">
+                        Essai gratuit 30 jours
+                    </a>
+                    <a href="https://wa.me/261320219889" target="_blank" class="btn-secondary btn-large">
+                        💬 Parler à un conseiller
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-pattern"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32">
+                            <circle cx="16" cy="16" r="14" fill="none" stroke="#C8102E" stroke-width="2"/>
+                            <path d="M16 8 L20 16 L16 24 L12 16 Z" fill="#C8102E"/>
+                        </svg>
+                        <span class="logo-text">Fakafasy IO</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Le logiciel de facturation de l'océan Indien.<br>
+                        Conçu à Nosy Be, pour Madagascar 🇲🇬
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" fill="currentColor">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/261320219889" target="_blank" class="social-link" aria-label="WhatsApp">
+                            <svg width="24" height="24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12c0 1.75.45 3.4 1.24 4.84L2 22l5.33-1.4A9.96 9.96 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Produit</h4>
+                    <ul>
+                        <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+                        <li><a href="#tarifs">Tarifs</a></li>
+                        <li><a href="#demo">Démo</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="#a-propos">À propos</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Presse</a></li>
+                        <li><a href="#">Partenaires</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="https://wa.me/261320219889" target="_blank">WhatsApp</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">CGV</a></li>
+                        <li><a href="#">Confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 GASY IA LAB - Tous droits réservés</p>
+                <p>Made with ❤️ in Nosy Be, Madagascar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/261320219889?text=Bonjour%20GASY%20IA%20LAB%2C%20j%27ai%20une%20question%20sur%20Fakafasy%20IO..." 
+       target="_blank" 
+       class="whatsapp-float" 
+       aria-label="Chat WhatsApp">
+        <svg width="28" height="28" fill="white" viewBox="0 0 24 24">
+            <path d="M12.031 1.999c-5.509 0-9.969 4.46-9.969 9.969 0 1.753.455 3.467 1.32 4.979l-1.382 5.053 5.17-1.355a9.926 9.926 0 0 0 4.861 1.265c5.509 0 9.969-4.46 9.969-9.969S17.54 2 12.031 2zm5.786 14.09c-.233.654-1.347 1.252-1.862 1.33-.468.072-.922.121-3.012-.646-2.676-1.007-4.391-3.729-4.523-3.902-.133-.174-1.072-1.427-1.072-2.723 0-1.296.679-1.935.92-2.201.24-.266.524-.333.699-.333.175 0 .35.002.503.008.161.008.378-.061.591.451.22.529.748 1.826.814 1.959.066.132.11.286.022.46-.089.175-.132.284-.263.437-.132.154-.277.344-.396.462-.132.131-.27.274-.116.537.154.263.683 1.126 1.465 1.825 1.005.899 1.853 1.177 2.116 1.309.263.132.417.11.57-.066.154-.176.657-.768.833-1.032.175-.264.35-.22.591-.132.24.088 1.52.716 1.781.847.263.131.438.197.503.307.067.109.067.635-.166 1.289z"/>
+        </svg>
+        <span class="whatsapp-tooltip">Chat WhatsApp</span>
+    </a>
+
+    <!-- AI Assistant Popup (Optional) -->
+    <div class="ai-assistant hidden" id="ai-assistant">
+        <div class="ai-header">
+            <div class="ai-avatar">🤖</div>
+            <div class="ai-info">
+                <h5>Fasy - Assistant IA</h5>
+                <span class="ai-status">En ligne</span>
+            </div>
+            <button class="ai-close" onclick="closeAiAssistant()">×</button>
+        </div>
+        <div class="ai-body">
+            <p class="ai-welcome">
+                Bonjour ! Je suis Fasy, l'assistant virtuel de Fakafasy IO. Comment puis-je vous aider ?
+            </p>
+            <div class="ai-suggestions">
+                <button onclick="aiSuggest('tarifs')">💰 Quels sont les tarifs ?</button>
+                <button onclick="aiSuggest('diaspora')">🌍 Paiement depuis l'étranger ?</button>
+                <button onclick="aiSuggest('essai')">🎁 Essai gratuit ?</button>
+            </div>
+        </div>
+    </div>
+
+    <button class="ai-trigger" id="ai-trigger" onclick="openAiAssistant()">
+        <span>💬</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+            <!-- Payment Flow -->
+            <div class="payment-flow">
+                
+                <!-- Step 1: Location Detection -->
+                <div class="payment-step active" id="step-location">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <h3>D'où payez-vous ?</h3>
+                    </div>
+                    
+                    <div class="location-options">
+                        <button class="location-card" data-location="madagascar">
+                            <div class="location-icon">🇲🇬</div>
+                            <h4>Je suis à Madagascar</h4>
+                            <p>Paiement via Mobile Money</p>
+                            <div class="payment-methods">
+                                <span class="method-badge orange">Orange Money</span>
+                                <span class="method-badge red">MVola</span>
+                            </div>
+                        </button>
+                        
+                        <button class="location-card" data-location="international">
+                            <div class="location-icon">🌍</div>
+                            <h4>Je suis à l'étranger</h4>
+                            <p>Transfert international vers Madagascar</p>
+                            <div class="payment-methods">
+                                <span class="method-badge blue">TapTapSend</span>
+                                <span class="method-badge purple">Sendwave</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2A: Madagascar Payment -->
+                <div class="payment-step" id="step-madagascar">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <h3>Choisissez votre opérateur</h3>
+                    </div>
+                    
+                    <div class="operator-selection">
+                        <button class="operator-card" data-operator="orange">
+                            <div class="operator-logo orange">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <circle cx="20" cy="20" r="18" fill="#FF6600"/>
+                                    <text x="20" y="26" text-anchor="middle" fill="white" font-size="16" font-weight="bold">OM</text>
+                                </svg>
+                            </div>
+                            <h4>Orange Money</h4>
+                            <p class="fee-info">Frais: 5% du montant</p>
+                        </button>
+                        
+                        <button class="operator-card" data-operator="mvola">
+                            <div class="operator-logo red">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <circle cx="20" cy="20" r="18" fill="#E30613"/>
+                                    <text x="20" y="26" text-anchor="middle" fill="white" font-size="14" font-weight="bold">MV</text>
+                                </svg>
+                            </div>
+                            <h4>MVola</h4>
+                            <p class="fee-info">Frais: 4% du montant</p>
+                        </button>
+                    </div>
+
+                    <!-- Payment Summary -->
+                    <div class="payment-summary">
+                        <h4>Récapitulatif du paiement</h4>
+                        <div class="summary-line">
+                            <span>Plan sélectionné</span>
+                            <strong id="selected-plan-name">Pro</strong>
+                        </div>
+                        <div class="summary-line">
+                            <span>Prix de base</span>
+                            <strong id="base-price">45 000 Ar</strong>
+                        </div>
+                        <div class="summary-line fee-line">
+                            <span>Frais opérateur <span class="fee-percent" id="operator-fee-percent">(5%)</span></span>
+                            <strong id="operator-fee">2 250 Ar</strong>
+                        </div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-line total-line">
+                            <span>Total à payer</span>
+                            <strong id="total-price">47 250 Ar</strong>
+                        </div>
+                    </div>
+
+                    <!-- Payment Instructions -->
+                    <div class="payment-instructions">
+                        <h4>Instructions de paiement</h4>
+                        <ol class="instruction-list" id="instruction-list-orange">
+                            <li>
+                                <div class="instruction-icon">1</div>
+                                <div class="instruction-text">
+                                    <strong>Composez *111#</strong>
+                                    <p>Sur votre téléphone Orange</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="instruction-icon">2</div>
+                                <div class="instruction-text">
+                                    <strong>Sélectionnez "Paiement marchand"</strong>
+                                    <p>Dans le menu qui apparaît</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="instruction-icon">3</div>
+                                <div class="instruction-text">
+                                    <strong>Entrez le code: FASY2026</strong>
+                                    <p>Code marchand Fakafasy IO</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="instruction-icon">4</div>
+                                <div class="instruction-text">
+                                    <strong>Montant: <span id="ussd-amount">47250</span></strong>
+                                    <p>Sans espaces ni virgules</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="instruction-icon">5</div>
+                                <div class="instruction-text">
+                                    <strong>Confirmez avec votre code PIN</strong>
+                                    <p>Vous recevrez un SMS de confirmation</p>
+                                </div>
+                            </li>
+                        </ol>
+
+                        <ol class="instruction-list hidden" id="instruction-list-mvola">
+                            <li>
+                                <div class="instruction-icon">1</div>
+                                <div class="instruction-text">
+                                    <strong>Composez *111#</strong>
+                                    <p>Sur votre téléphone Telma</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="instruction-icon">2</div>
+                                <div class="instruction-text">
+                                    <strong>Sélectionnez "Paiement"</strong>
+                                    <p>Puis "Paiement marchand"</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="instruction-icon">3</div>
+                                <div class="instruction-text">
+                                    <strong>Numéro marchand: 0320219889</strong>
+                                    <p>Compte officiel Fakafasy IO</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="instruction-icon">4</div>
+                                <div class="instruction-text">
+                                    <strong>Montant: <span id="ussd-amount-mvola">47250</span></strong>
+                                    <p>Sans espaces ni virgules</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="instruction-icon">5</div>
+                                <div class="instruction-text">
+                                    <strong>Validez avec votre code secret</strong>
+                                    <p>SMS de confirmation immédiat</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <button class="btn-primary btn-large" onclick="showProofUpload()">
+                        J'ai effectué le paiement →
+                    </button>
+                </div>
+
+                <!-- Step 2B: International Payment -->
+                <div class="payment-step" id="step-international">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <h3>Paiement depuis l'étranger</h3>
+                    </div>
+
+                    <div class="international-info">
+                        <div class="price-conversion">
+                            <div class="conversion-card">
+                                <div class="flag-icon">🇲🇬</div>
+                                <div class="amount-display">
+                                    <span class="amount-value">45 000</span>
+                                    <span class="amount-currency">Ariary</span>
+                                </div>
+                            </div>
+                            <div class="conversion-arrow">
+                                <svg width="40" height="40" fill="#C8102E">
+                                    <path d="M20 10v20m0 0l-5-5m5 5l5-5"/>
+                                </svg>
+                            </div>
+                            <div class="conversion-card">
+                                <div class="flag-icon">🇪🇺</div>
+                                <div class="amount-display">
+                                    <span class="amount-value">11</span>
+                                    <span class="amount-currency">EUR</span>
+                                </div>
+                            </div>
+                            <div class="conversion-or">ou</div>
+                            <div class="conversion-card">
+                                <div class="flag-icon">🇺🇸</div>
+                                <div class="amount-display">
+                                    <span class="amount-value">12</span>
+                                    <span class="amount-currency">USD</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p class="rate-info">
+                            <svg width="16" height="16" fill="#718096">
+                                <circle cx="8" cy="8" r="7" stroke="currentColor" fill="none" stroke-width="2"/>
+                                <path d="M8 4v4l2 2" stroke="currentColor" fill="none" stroke-width="2"/>
+                            </svg>
+                            Taux de change mis à jour le <strong>30/03/2026</strong>
+                        </p>
+                    </div>
+
+                    <div class="transfer-services">
+                        <h4>Services de transfert recommandés</h4>
+                        
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-logo">
+                                    <svg width="48" height="48" viewBox="0 0 48 48">
+                                        <rect width="48" height="48" rx="12" fill="#00D4AA"/>
+                                        <text x="24" y="30" text-anchor="middle" fill="white" font-size="18" font-weight="bold">TT</text>
+                                    </svg>
+                                </div>
+                                <div class="service-info">
+                                    <h5>TapTapSend</h5>
+                                    <p class="service-rating">⭐⭐⭐⭐⭐ 4.8/5</p>
+                                </div>
+                            </div>
+                            <div class="service-details">
+                                <div class="detail-row">
+                                    <span>Frais de transfert</span>
+                                    <strong class="success">0€</strong>
+                                </div>
+                                <div class="detail-row">
+                                    <span>Taux de change</span>
+                                    <strong>1€ = 4 091 Ar</strong>
+                                </div>
+                                <div class="detail-row">
+                                    <span>Délai</span>
+                                    <strong>Instantané</strong>
+                                </div>
+                                <div class="detail-row">
+                                    <span>Montant à envoyer</span>
+                                    <strong>11,50€ → 47 046 Ar</strong>
+                                </div>
+                            </div>
+                            <div class="service-instructions">
+                                <p><strong>Numéro de réception:</strong></p>
+                                <div class="phone-number">
+                                    📱 +261 32 02 198 89
+                                    <button class="copy-btn" onclick="copyToClipboard('+261320219889')">
+                                        <svg width="16" height="16" fill="currentColor">
+                                            <path d="M4 2h8v2H4zm0 4h8v2H4zm0 4h5v2H4z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <p class="recipient-name">GASY IA LAB</p>
+                            </div>
+                            <a href="https://www.taptapsend.com" target="_blank" class="btn-primary">
+                                Envoyer via TapTapSend →
+                            </a>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-header">
+                                <div class="service-logo">
+                                    <svg width="48" height="48" viewBox="0 0 48 48">
+                                        <rect width="48" height="48" rx="12" fill="#5B00FF"/>
+                                        <text x="24" y="30" text-anchor="middle" fill="white" font-size="18" font-weight="bold">SW</text>
+                                    </svg>
+                                </div>
+                                <div class="service-info">
+                                    <h5>Sendwave</h5>
+                                    <p class="service-rating">⭐⭐⭐⭐ 4.6/5</p>
+                                </div>
+                            </div>
+                            <div class="service-details">
+                                <div class="detail-row">
+                                    <span>Frais de transfert</span>
+                                    <strong>1,99€</strong>
+                                </div>
+                                <div class="detail-row">
+                                    <span>Taux de change</span>
+                                    <strong>1€ = 4 050 Ar</strong>
+                                </div>
+                                <div class="detail-row">
+                                    <span>Délai</span>
+                                    <strong>Quelques minutes</strong>
+                                </div>
+                                <div class="detail-row">
+                                    <span>Montant à envoyer</span>
+                                    <strong>13,49€ → 47 000 Ar</strong>
+                                </div>
+                            </div>
+                            <div class="service-instructions">
+                                <p><strong>Numéro de réception:</strong></p>
+                                <div class="phone-number">
+                                    📱 +261 32 02 198 89
+                                    <button class="copy-btn" onclick="copyToClipboard('+261320219889')">
+                                        <svg width="16" height="16" fill="currentColor">
+                                            <path d="M4 2h8v2H4zm0 4h8v2H4zm0 4h5v2H4z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <p class="recipient-name">GASY IA LAB</p>
+                            </div>
+                            <a href="https://www.sendwave.com" target="_blank" class="btn-secondary">
+                                Envoyer via Sendwave →
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary btn-large" onclick="showProofUpload()">
+                        J'ai effectué le transfert →
+                    </button>
+                </div>
+
+                <!-- Step 3: Proof Upload -->
+                <div class="payment-step" id="step-proof">
+                    <div class="step-header">
+                        <div class="step-number">3</div>
+                        <h3>Envoyez votre preuve de paiement</h3>
+                    </div>
+
+                    <div class="upload-zone" id="upload-zone">
+                        <div class="upload-icon">
+                            <svg width="64" height="64" fill="none" stroke="#C8102E" stroke-width="2">
+                                <rect x="8" y="16" width="48" height="40" rx="4"/>
+                                <path d="M32 24v16m-8-8l8-8 8 8"/>
+                            </svg>
+                        </div>
+                        <h4>Glissez votre capture d'écran ici</h4>
+                        <p>ou cliquez pour sélectionner un fichier</p>
+                        <p class="upload-formats">PNG, JPG, PDF (max 5 MB)</p>
+                        <input type="file" id="proof-file" accept="image/*,.pdf" hidden onchange="handleFileUpload(event)">
+                        <button class="btn-secondary" onclick="document.getElementById('proof-file').click()">
+                            Choisir un fichier
+                        </button>
+                    </div>
+
+                    <div class="upload-preview hidden" id="upload-preview">
+                        <div class="preview-header">
+                            <svg width="24" height="24" fill="#48bb78">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Fichier sélectionné</span>
+                        </div>
+                        <div class="preview-file">
+                            <img id="preview-image" src="" alt="Preview">
+                            <div class="file-info">
+                                <p id="file-name">proof_payment.jpg</p>
+                                <p id="file-size">1.2 MB</p>
+                            </div>
+                            <button class="remove-file" onclick="removeFile()">
+                                <svg width="20" height="20" fill="#e53e3e">
+                                    <path d="M6 6l8 8m0-8l-8 8"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <form class="payment-form" id="payment-form" onsubmit="submitPayment(event)">
+                        <div class="form-group">
+                            <label for="customer-email">Votre email</label>
+                            <input type="email" id="customer-email" required placeholder="votreemail@exemple.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-phone">Votre numéro de téléphone</label>
+                            <input type="tel" id="customer-phone" required placeholder="+261 32 00 000 00">
+                        </div>
+                        <div class="form-group">
+                            <label for="transaction-ref">Référence de transaction (optionnel)</label>
+                            <input type="text" id="transaction-ref" placeholder="Ex: OM12345678 ou réf. TapTapSend">
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-large">
+                            Valider mon paiement
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 10h10m-5-5l5 5-5 5"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Step 4: Confirmation -->
+                <div class="payment-step" id="step-confirmation">
+                    <div class="confirmation-success">
+                        <div class="success-icon">
+                            <svg width="80" height="80" fill="none" stroke="#48bb78" stroke-width="4">
+                                <circle cx="40" cy="40" r="36"/>
+                                <path d="M20 40l12 12 28-28"/>
+                            </svg>
+                        </div>
+                        <h3>Paiement en cours de vérification</h3>
+                        <p class="confirmation-text">
+                            Nous avons bien reçu votre preuve de paiement.<br>
+                            Notre équipe va la vérifier dans les <strong>2 heures</strong>.
+                        </p>
+                        
+                        <div class="confirmation-ref">
+                            <p>Référence de demande:</p>
+                            <div class="ref-code">FASY-<span id="order-ref">20260330-4521</span></div>
+                        </div>
+
+                        <div class="next-steps">
+                            <h4>Prochaines étapes :</h4>
+                            <ol>
+                                <li>📧 Vous recevrez un email de confirmation</li>
+                                <li>📲 Un SMS avec le lien de téléchargement</li>
+                                <li>🔑 Votre clé de licence sera envoyée</li>
+                            </ol>
+                        </div>
+
+                        <div class="support-info">
+                            <p>Questions ? Contactez-nous :</p>
+                            <div class="support-links">
+                                <a href="https://wa.me/261320219889" target="_blank" class="support-link">
+                                    <svg width="20" height="20" fill="#25D366">
+                                        <path d="M10 0C4.48 0 0 4.48 0 10c0 1.75.45 3.4 1.24 4.84L0 20l5.33-1.4A9.96 9.96 0 0 0 10 20c5.52 0 10-4.48 10-10S15.52 0 10 0zm5.03 14.14c-.23.65-1.35 1.23-1.86 1.28-.5.05-1.02.23-3.43-.72-2.91-1.15-4.78-4.12-4.93-4.31-.14-.19-1.21-1.61-1.21-3.08 0-1.46.77-2.18 1.04-2.48.28-.3.6-.37.8-.37.2 0 .4.01.57.01.18 0 .43-.07.67.51.24.58.82 2 .89 2.15.07.14.12.3.02.49-.09.19-.14.3-.28.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.27.71 1.18 1.53 1.91 1.05.94 1.94 1.23 2.21 1.37.28.14.44.12.6-.07.17-.19.71-.83.9-1.12.19-.28.38-.24.64-.14.26.09 1.65.78 1.93.92.28.14.47.21.54.33.07.11.07.65-.16 1.3z"/>
+                                    </svg>
+                                    WhatsApp Support
+                                </a>
+                                <a href="mailto:gasyialab2.o@gmail.com" class="support-link">
+                                    <svg width="20" height="20" fill="#C8102E">
+                                        <path d="M2 4h16v12H2V4zm0 1.5l8 5 8-5V4l-8 5-8-5v1.5z"/>
+                                    </svg>
+                                    Email
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="index.html" class="btn-secondary">Retour à l'accueil</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Je continue avec Contact + Footer dans le prochain message -->
+</body>
+</html>
